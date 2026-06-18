@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark D. Cavins Portfolio</title>
+    <!-- Main styles loaded by Vite -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <div id="portfolio-container" class="exhibition-layout">
+      <!-- Background patterns -->
+      <div class="schematic-bg" id="proc-grid"></div>
+      <div class="schematic-overlay" id="blur-filter"></div>
+      <div class="schematic-cyan-trendline" id="horizontal-ray"></div>
+
+      <!-- Floating System Coordinates (Mouse & Scroll tracker info) -->
+      <div class="schematic-coordinates">
+        <span>SYS_STATUS : ONLINE // NOMINAL_V1.4</span>
+        <span id="coord-x">X_COORD : 0000 PX</span>
+        <span id="coord-y">Y_COORD : 0000 PX</span>
+        <span id="scroll-val">SCROLL : 000%</span>
+      </div>
+
+      <!-- Custom Crosshair Cursor -->
+      <div class="custom-cursor-outer" id="cursor-outer"></div>
+      <div class="custom-cursor-inner" id="cursor-inner"></div>
+
+      <!-- Structural Top Masthead (Navigation & Telemetry) -->
+      <header class="masthead" id="main-header">
+        <div class="masthead-title interactive-node" id="logo-trigger" style="cursor: pointer;">
+          M_CAVINS <span>[ PMP_COGNITIVE ]</span>
+        </div>
+        <div class="masthead-telemetry">
+          <span class="telemetry-node-block">
+            <span class="telemetry-pixel active"></span>
+            <span class="telemetry-pixel active"></span>
+            <span class="telemetry-pixel active"></span>
+            <span class="telemetry-pixel"></span>
+            <span class="telemetry-pixel active"></span>
+          </span>
+          <span id="sys-tick">SYS_TICK : --:--:-- UTC</span>
+        </div>
+        <nav class="masthead-nav">
+          <a href="#hero" id="nav-hero" class="active">00</a>
+          <a href="#human" id="nav-human">01</a>
+          <a href="#scale" id="nav-scale">02</a>
+          <a href="#skills" id="nav-skills">03</a>
+          <a href="#vision" id="nav-vision">04</a>
+        </nav>
+      </header>
+
+      <main style="grid-column: span 12; display: grid; grid-template-columns: repeat(12, 1fr);">
+        <!-- SECTION 00: HERO -->
+        <section id="hero" class="exhibition-section revealed" data-section-id="hero" style="min-height: 100vh;">
+          <div class="rail-left">
+            <div class="label-mono">LOC : SEATTLE, WA</div>
+            <div class="label-mono">[ INDEX // 00_HERO ]</div>
+          </div>
+
+          <div class="content-center">
+            <div class="hero-content">
+              <div class="hero-text-block">
+                <div class="hero-headline">
+                  <span class="label-mono label-cyan" style="margin-bottom: 1rem; display: block;">
+                    [ SYSTEM ARCHITECTURE MATRIX ]
+                  </span>
+                  <h1>Mark D. Cavins</h1>
+                  <h3 style="margin-top: 1.5rem; color: var(--text-secondary); letter-spacing: 0.05em;">
+                    Principal Product Manager | AI Transformation & Strategy
+                  </h3>
+                </div>
+
+                <div class="hero-lead-box">
+                  <p>
+                    Driving enterprise-scale digital transformation and 0-to-1 initiatives through Generative AI, agentic system design, and empathy-driven execution.
+                  </p>
+                </div>
+
+                <div class="hero-meta-panel">
+                  <div class="meta-item">
+                    <span class="label-mono">[ INTERSECTION ]</span>
+                    <span style="font-size: 1rem; color: var(--text-primary); margin-top: 0.2rem;">
+                      Technology & Human Systems
+                    </span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="label-mono">[ ARCHITECTURE ]</span>
+                    <span style="font-size: 1rem; color: var(--text-primary); margin-top: 0.2rem;">
+                      Generative AI & Agentic Ops
+                    </span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="label-mono">[ DISCIPLINE ]</span>
+                    <span style="font-size: 1rem; color: var(--text-primary); margin-top: 0.2rem;">
+                      Pragmatic Engineering Flow
+                    </span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                  <button class="btn-cyan interactive-node" id="btn-explore">
+                    Enter Exhibition // 01
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rail-right">
+            <div class="label-mono" style="text-transform: uppercase; writing-mode: vertical-rl; transform: rotate(180deg);">
+              CORE_DISCIPLINE_ALIGNMENT
+            </div>
+            <div class="label-mono">M_CAV_EXHIB_2026</div>
+          </div>
+        </section>
+
+        <!-- SECTION 01: THE HUMAN ELEMENT (ZPass Case Study) -->
+        <section id="human" class="exhibition-section" data-section-id="human" style="min-height: 100vh;">
+          <div class="rail-left">
+            <div class="label-mono">PROJECT : ZPASS</div>
+            <div class="label-mono">[ INDEX // 01_HUMAN ]</div>
+          </div>
+
+          <div class="content-center">
+            <span class="label-mono label-cyan" style="margin-bottom: 1.5rem; display: block;">
+              [ / 01 THE HUMAN ELEMENT ]
+            </span>
+            <h2 style="margin-bottom: 1.5rem;">The Human Element</h2>
+            <h3 style="color: var(--text-secondary); margin-bottom: 3rem; font-weight: 400;">
+              ZPass: Safety as a Non-Negotiable Database Architecture
+            </h3>
+
+            <div class="casestudy-meta">
+              <span>STATUS: COMPLETE</span>
+              <span>DOMAIN: PRIVACY & LOGISTICS</span>
+              <span>HARDWARE & SOFTWARE</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 2rem; max-width: 850px;">
+              <div>
+                <span class="label-mono" style="color: var(--text-primary); display: block; margin-bottom: 0.5rem;">
+                  THE INITIATIVE
+                </span>
+                <p>
+                  ZPass. A hardware and software ecosystem initially designed for logistics, reimagined to protect society’s most precious inventory: children.
+                </p>
+              </div>
+
+              <div>
+                <span class="label-mono" style="color: var(--text-primary); display: block; margin-bottom: 0.5rem;">
+                  THE CATALYST
+                </span>
+                <p>
+                  Driven by the tragic loss of a special-needs student left on a freezing school bus, the mission shifted instantly from inventory tracking to human safety.
+                </p>
+              </div>
+
+              <div>
+                <span class="label-mono" style="color: var(--text-primary); display: block; margin-bottom: 0.5rem;">
+                  THE ARCHITECTURE
+                </span>
+                <p>
+                  Engineered a privacy-first database architecture from the ground up, obfuscating Personal Identifying Information (PII) to ensure student data was never exposed via open APIs.
+                </p>
+              </div>
+            </div>
+
+            <div class="divider-h"></div>
+            
+            <span class="label-mono" style="display: block; margin-bottom: 1.5rem;">Verified Impact Metrics</span>
+            <div class="metric-grid-2">
+              <div class="metric-card interactive-node">
+                <div class="metric-corner"></div>
+                <div class="metric-content">
+                  <div class="num-display">300K+</div>
+                  <div class="label-mono">[ NATIONWIDE SCALE ]</div>
+                  <p class="metric-desc">Scaled to protect over 300,000 students nationwide through real-time transit telemetry.</p>
+                </div>
+              </div>
+
+              <div class="metric-card interactive-node">
+                <div class="metric-corner"></div>
+                <div class="metric-content">
+                  <div class="num-display">EDISON</div>
+                  <div class="label-mono">[ INNOVATION AWARD ]</div>
+                  <p class="metric-desc">Awarded the prestigious Edison Award for Innovation in 2011, noting its structural safety paradigm.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rail-right">
+            <div class="label-mono" style="writing-mode: vertical-rl; transform: rotate(180deg);">
+              PII_OBFUSCATION_ACTIVE
+            </div>
+            <div class="label-mono">SECURE_CORE</div>
+          </div>
+        </section>
+
+        <!-- SECTION 02: ALGORITHMIC SCALE -->
+        <section id="scale" class="exhibition-section" data-section-id="scale" style="min-height: 100vh;">
+          <div class="rail-left">
+            <div class="label-mono">OP_SCALE : METRICS</div>
+            <div class="label-mono">[ INDEX // 02_SCALE ]</div>
+          </div>
+
+          <div class="content-center">
+            <span class="label-mono label-cyan" style="margin-bottom: 1.5rem; display: block;">
+              [ / 02 ALGORITHMIC SCALE ]
+            </span>
+            <h2 style="margin-bottom: 1.5rem;">Algorithmic Scale</h2>
+            <h3 style="color: var(--text-secondary); margin-bottom: 4rem; font-weight: 400;">
+              Optimizing Cognitive and Financial Pipelines across Cloud Architectures
+            </h3>
+
+            <div class="metric-grid-2">
+              <div class="metric-card interactive-node">
+                <div class="metric-corner"></div>
+                <div class="metric-content">
+                  <div class="num-display">20%</div>
+                  <div class="label-mono">[ CHEF PLATFORM SaaS ]</div>
+                  <p class="metric-desc">YoY revenue growth achieved by deploying a zero-to-one SaaS platform for Site Reliability Engineering (SRE) professionals.</p>
+                </div>
+              </div>
+
+              <div class="metric-card interactive-node">
+                <div class="metric-corner"></div>
+                <div class="metric-content">
+                  <div class="num-display">18%</div>
+                  <div class="label-mono">[ COLLATERAL BIAS CONTROL ]</div>
+                  <p class="metric-desc">Reduction in AI model hallucination rates achieved in a single quarter through a custom "Golden Set" evaluation framework.</p>
+                </div>
+              </div>
+
+              <div class="metric-card interactive-node">
+                <div class="metric-corner"></div>
+                <div class="metric-content">
+                  <div class="num-display">67%</div>
+                  <div class="label-mono">[ PIPELINE OPTIMIZATION ]</div>
+                  <p class="metric-desc">Reduction in P99 latency across 500k+ serverless applications by optimizing runtime inference layouts.</p>
+                </div>
+              </div>
+
+              <div class="metric-card interactive-node">
+                <div class="metric-corner"></div>
+                <div class="metric-content">
+                  <div class="num-display">$3.2M</div>
+                  <div class="label-mono">[ MOBILEIRON INTEGRATION ]</div>
+                  <p class="metric-desc">In revenue added on a 0-to-1 launch cycle by engineering and implementing a brand new API enterprise strategy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rail-right">
+            <div class="label-mono" style="writing-mode: vertical-rl; transform: rotate(180deg);">
+              P99_OPTIMIZATION_MODULE
+            </div>
+            <div class="label-mono">DATA_STREAM_89</div>
+          </div>
+        </section>
+
+        <!-- SECTION 03: THE COMMAND CENTER & AI CAPABILITIES -->
+        <section id="skills" class="exhibition-section" data-section-id="skills" style="min-height: 100vh;">
+          <div class="rail-left">
+            <div class="label-mono">PROJECT: AI CAPABILITIES</div>
+            <div class="label-mono">[ INDEX // 03_COMMAND ]</div>
+          </div>
+
+          <div class="content-center">
+            <span class="label-mono label-cyan" style="margin-bottom: 1.5rem; display: block;">
+              [ / 03 CHEF 360 COMMAND CENTER ]
+            </span>
+            <h2 style="margin-bottom: 1.5rem;">Chef 360 Command Center</h2>
+            <h3 style="color: var(--text-secondary); margin-bottom: 1.5rem; font-weight: 400;">
+              The Cognitive Toolkit: Deep Execution & Governance Vectors
+            </h3>
+            <div style="border-left: 1px solid var(--accent-color); padding-left: 1rem; margin-bottom: 3rem;">
+              <span class="label-mono" style="display: block; font-size: 0.75rem; margin-bottom: 0.2rem;">[ DEVOPS PROJECT DELIVERABLE ]</span>
+              <p style="font-size: 1.1rem; color: #ffffff;">
+                A 0-to-1 priority DevOps platform initiative that has successfully generated <strong>$30 Million in revenue</strong> as a completed initiative.
+              </p>
+            </div>
+
+            <div class="skills-container">
+              <div class="skill-category-card interactive-node">
+                <div style="display: flex; align-items: center; gap: 0.8rem;">
+                  <!-- Dynamic SVG Cpu Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-color);"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/><path d="M20 9h3"/><path d="M20 15h3"/><path d="M1 9h3"/><path d="M1 15h3"/></svg>
+                  <span class="label-mono" style="color: var(--text-primary); font-size: 0.9rem;">AI / ML</span>
+                </div>
+                <div class="divider-cyan-h"></div>
+                <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                  <span class="skill-tag">Gemini</span>
+                  <span class="skill-tag">GPT-4o</span>
+                  <span class="skill-tag">Pinecone</span>
+                  <span class="skill-tag">LangChain</span>
+                </div>
+                <div class="skills-items-list">
+                  <div class="skill-item">
+                    <span class="skill-name">LLMs</span>
+                    <span class="skill-detail">Gemini, GPT-4/5 architectures, custom fine-tuning & parameters</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">RAG Systems</span>
+                    <span class="skill-detail">Progress RAG integration across high-density enterprise intelligence pools</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">Vector Databases</span>
+                    <span class="skill-detail">Pinecone, Milvus high-density fast similarity coordinates search</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">Prompt Engineering</span>
+                    <span class="skill-detail">OPSmith product integration, system directives, chain-of-thought, validation frameworks</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category-card interactive-node">
+                <div style="display: flex; align-items: center; gap: 0.8rem;">
+                  <!-- Dynamic SVG Layers Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-color);"><path d="m12 3-10 5 10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+                  <span class="label-mono" style="color: var(--text-primary); font-size: 0.9rem;">Ops & Infra</span>
+                </div>
+                <div class="divider-cyan-h"></div>
+                <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                  <span class="skill-tag">LLMOps</span>
+                  <span class="skill-tag">SageMaker</span>
+                  <span class="skill-tag">Kubernetes</span>
+                  <span class="skill-tag">CI/CD</span>
+                </div>
+                <div class="skills-items-list">
+                  <div class="skill-item">
+                    <span class="skill-name">MLOps & LLMOps</span>
+                    <span class="skill-detail">Lifecycle controls, continuous model testing and registry pipelines</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">AWS SageMaker</span>
+                    <span class="skill-detail">Full deployment cycle control over massive parallel model layers</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">Kubernetes</span>
+                    <span class="skill-detail">Serverless elasticity management for scale inference workloads</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">CI/CD Pipeline</span>
+                    <span class="skill-detail">Automated regressions testing, performance and latencies monitoring</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category-card interactive-node">
+                <div style="display: flex; align-items: center; gap: 0.8rem;">
+                  <!-- Dynamic SVG Shield Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-color);"><path d="M20 13c0 5-3.5 7.5-7.66 9.7a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 .76-.97l8-2a1 1 0 0 1 .48 0l8 2A1 1 0 0 1 20 6z"/></svg>
+                  <span class="label-mono" style="color: var(--text-primary); font-size: 0.9rem;">Governance</span>
+                </div>
+                <div class="divider-cyan-h"></div>
+                <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                  <span class="skill-tag">NIST AI RMF</span>
+                  <span class="skill-tag">EU AI ACT</span>
+                  <span class="skill-tag">Red-Teaming</span>
+                </div>
+                <div class="skills-items-list">
+                  <div class="skill-item">
+                    <span class="skill-name">NIST AI RMF</span>
+                    <span class="skill-detail">NIST Risk Management implementation & alignment matrices</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">EU AI Act</span>
+                    <span class="skill-detail">Legal landscape alignment, strict regulatory compliance architectures</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">Bias Mitigation</span>
+                    <span class="skill-detail">Systemic demographic auditing frameworks and synthetic balancing</span>
+                  </div>
+                  <div class="skill-item">
+                    <span class="skill-name">Red-Teaming</span>
+                    <span class="skill-detail">Adversarial evaluation testing to seal threat vectors beforehand</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rail-right">
+            <div class="label-mono" style="writing-mode: vertical-rl; transform: rotate(180deg);">
+              COG_TOOLKIT_CAPABLE
+            </div>
+            <div class="label-mono">NIST_NATIVE</div>
+          </div>
+        </section>
+
+        <!-- SECTION 04: THE PHILOSOPHY -->
+        <section id="vision" class="exhibition-section" data-section-id="vision" style="min-height: 100vh;">
+          <div class="rail-left">
+            <div class="label-mono font-bold">STATE : THE_VISION</div>
+            <div className="label-mono">[ INDEX // 04_VISION ]</div>
+          </div>
+
+          <div class="content-center">
+            <span class="label-mono label-cyan" style="margin-bottom: 1.5rem; display: block;">
+              [ / 04 THE VISION ]
+            </span>
+            <h2 style="margin-bottom: 2.5rem;">The Philosophy</h2>
+            
+            <div style="border-left: 3px solid var(--accent-color); padding-left: 2rem; margin-bottom: 4rem; max-width: 850px;">
+              <blockquote style="font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 300; color: #ffffff; line-height: 1.4; font-family: var(--font-display); text-transform: uppercase; margin: 0;">
+                "SaaS begins the journey, but it should not be the end goal."
+              </blockquote>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 850px; margin-top: 2rem;">
+              <div>
+                <span class="label-mono" style="color: var(--accent-color); display: block; margin-bottom: 0.8rem;">
+                  BPaaS STRATEGY
+                </span>
+                <p style="font-size: 1.05rem; color: var(--text-secondary);">
+                  Pioneering the shift toward Business Process as a Service (BPaaS) by treating "Policy as Code" as a business logic framework. Integrating compliance rules organically directly into code execution boundaries.
+                </p>
+              </div>
+
+              <div>
+                <span class="label-mono" style="color: var(--accent-color); display: block; margin-bottom: 0.8rem;">
+                  EXECUTION VECTOR
+                </span>
+                <p style="font-size: 1.05rem; color: var(--text-secondary);">
+                  Moving beyond static dashboards to build living Command Centers for issue review, guidance, and automated remediation. Shifting human attention to where cognitive decision-making is irreplaceable.
+                </p>
+              </div>
+            </div>
+
+            <div class="divider-h"></div>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <span class="label-mono">Let's build structural intelligence.</span>
+              <div>
+                <a href="mailto:mdcavins@gmail.com" class="btn-cyan interactive-node" id="btn-contact">
+                  Init Contact : mdcavins@gmail.com 
+                  <!-- Dynamic Arrow Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; margin-left: 0.5rem; vertical-align: middle;"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="rail-right">
+            <div class="label-mono" style="writing-mode: vertical-rl; transform: rotate(180deg);">
+              BPaaS_NOMINAL_TICK
+            </div>
+            <div class="label-mono">END_MATRIX_2026</div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer Scrubber Tracker Line -->
+      <div class="timeline-scrubber-container" id="scroll-rail">
+        <div class="timeline-scrubber-bar" id="scroll-bar"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

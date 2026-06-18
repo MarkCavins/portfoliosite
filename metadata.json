@@ -1,0 +1,6 @@
+{
+  "name": "Mark D. Cavins Portfolio",
+  "description": "Museum-quality exhibition portfolio for Mark D. Cavins, Principal Product Manager specialized in AI Transformation, SaaS, and empathy-driven human systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
